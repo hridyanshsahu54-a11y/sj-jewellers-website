@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #292929;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    .logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span,
+.footer-logo span {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #d4af37;
+    color: #d4af37;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo small {
+    color: #aaa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title,
+.section-small {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 95px);
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.hero h1 span,
+section h2 span {
+    color: #d4af37;
+}
+
+.hero-text {
+    color: #aaa;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn,
+.gold-btn {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #d4af37;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.gold-btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn.outline {
+    background: transparent;
+    color: white;
+}
+
+.btn.outline:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    width: 300px;
+    height: 350px;
+
+    border: 1px solid #444;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(145deg, #151515, #080808);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.diamond {
+    color: #d4af37;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+    font-size: 60px;
+    color: #d4af37;
+}
+
+.hero-card p {
+    color: #aaa;
+}
+
+
+/* COLLECTION */
+
+.collections {
+    padding: 100px 25px;
+    text-align: center;
+    background: #111;
+}
+
+.collections h2,
+.about h2,
+.contact h2 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.section-description {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 40px 25px;
+
+    background: #171717;
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #999;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.card button {
+    padding: 11px 20px;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 100px 25px;
+}
+
+.about-box {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-box > p:not(.section-small) {
+    color: #aaa;
+    max-width: 750px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.stats {
+    margin-top: 50px;
+
+    display: flex;
+    gap: 70px;
+}
+
+.stats h3 {
+    color: #d4af37;
+    font-size: 35px;
+}
+
+.stats p {
+    color: #999;
+    margin-top: 8px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 100px 25px;
+    background: #111;
+}
+
+.contact > p:not(.section-small) {
+    color: #aaa;
+    margin: 15px auto 35px;
+}
+
+.contact-info {
+    max-width: 700px;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.contact-info strong {
+    color: #d4af37;
+}
+
+.contact-info p {
+    color: #999;
+    margin-top: 8px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px 25px;
+    text-align: center;
+    border-top: 1px solid #292929;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    color: #aaa;
+}
+
+footer small {
+    display: block;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-card {
+        width: 260px;
+        height: 300px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .collections h2,
+    .about h2,
+    .contact h2 {
+        font-size: 38px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
