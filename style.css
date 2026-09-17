@@ -36,14 +36,16 @@ header {
 }
 
 .logo {
-    .logo img {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-}
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
 }
 
 .logo span,
@@ -365,9 +367,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-logo span {
-    width: 40px;
-    height: 40px;
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
 }
 
 footer p {
